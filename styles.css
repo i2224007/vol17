@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 130px;
+    background-color: #b37e7e;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #7a1e1e;
+}
+
+.container {
+    text-align: center;
+}
+
+.centered {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+.gallery {
+    max-width: 800px;
+    width: 100%;
+}
+
+.top-works,
+.bottom-works {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-card {
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.work-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.work-details {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 0 0 5px 5px;
+}
+
+.work-details h3 {
+    margin-top: 0;
+}
+
+/* スマートフォン用のスタイル */
+@media (max-width: 767px) {
+    .work-card {
+        width: calc(50% - 20px);
+    }
+}

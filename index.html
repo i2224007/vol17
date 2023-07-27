@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ポートフォリオ</title>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        function onSubmit() {
+            const nameInput = document.getElementById("name");
+            const name = nameInput.value.trim();
+            if (name !== "") {
+                const welcomeMessage = document.getElementById("welcome-message");
+                const welcomeText = document.getElementById("welcome-text");
+                welcomeText.innerText = "Welcome " + name;
+                nameInput.value = ""; // 入力欄をリセット
+                document.getElementById("name-input").style.display = "none"; // 入力欄を非表示
+                welcomeMessage.style.display = "block"; // "Welcome"メッセージを表示
+            } else {
+                alert("名前を入力してください。");
+            }
+        }
+    </script>
+    
+</head>
+
+<body>
+    <div id="name-input">
+        <input type="text" id="name" placeholder="名前を入力してください">
+        <button onclick="onSubmit()">確定</button>
+    </div>
+    <div id="welcome-message" style="display: none;">
+        <p id="welcome-text"></p>
+        <a href="portfolio.html">ポートフォリオを見る</a>
+    </div>
+</body>
+
+</html>

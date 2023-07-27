@@ -1,0 +1,36 @@
+body {
+    background-color: #000; /* 背景を黒に設定 */
+    /* 他のスタイル */
+}
+
+
+/* 入力欄とボタンを真ん中に配置 */
+#name-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* ビューポートの高さいっぱいに表示 */
+}
+
+#name, button {
+    width: 200px;
+    margin: 10px;
+}
+
+/* "Welcome"メッセージのスタイル */
+#welcome-message {
+    position: absolute; /* 絶対位置指定 */
+    top: 50%; /* 上端を画面の中央に */
+    left: 50%; /* 左端を画面の中央に */
+    transform: translate(-50%, -50%); /* 中央配置を微調整 */
+    text-align: center;
+    display: none;
+}
+
+#welcome-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #FFFFFF; /* メインカラーを適用 */
+}
